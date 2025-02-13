@@ -16,27 +16,27 @@ enum class ContentTypeId(
     companion object {
         // ID로 ContentTypeId 찾기
         fun findById(id: Int): ContentTypeId? {
-            return values().find { it.id == id }
+            return entries.find { it.id == id }
         }
 
         // 설명으로 ContentTypeId 찾기
         fun findByDescription(description: String): ContentTypeId? {
-            return values().find { it.description == description }
+            return entries.find { it.description == description }
         }
 
         // 모든 타입의 정보를 Map으로 반환
         fun getAllTypesMap(): Map<Int, String> {
-            return values().associate { it.id to it.description }
+            return entries.associate { it.id to it.description }
         }
 
         // 모든 타입의 ID 목록 반환
         fun getAllTypeIds(): List<Int> {
-            return values().map { it.id }
+            return entries.map { it.id }
         }
 
         // 모든 타입의 설명 목록 반환
         fun getAllDescriptions(): List<String> {
-            return values().map { it.description }
+            return entries.map { it.description }
         }
     }
 
