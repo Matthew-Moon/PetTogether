@@ -1,4 +1,4 @@
-package com.matthew.pettogether
+package com.matthew.pettogether.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
