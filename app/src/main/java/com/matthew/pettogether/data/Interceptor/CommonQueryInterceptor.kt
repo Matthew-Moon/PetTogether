@@ -1,4 +1,4 @@
-package com.matthew.pettogether.data.network
+package com.matthew.pettogether.data.Interceptor
 
 import okhttp3.Interceptor
 import okhttp3.Response

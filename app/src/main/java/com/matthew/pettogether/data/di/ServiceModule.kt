@@ -1,5 +1,6 @@
 package com.matthew.pettogether.data.di
 
+import com.matthew.pettogether.data.service.AreaCodeService
 import com.matthew.pettogether.data.service.CategoryCodeService
 import dagger.Module
 import dagger.Provides
@@ -15,5 +16,11 @@ object ServiceModule {
     @Singleton
     fun provideCategoryCodeService(retrofit: Retrofit): CategoryCodeService {
         return retrofit.create(CategoryCodeService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideAreaCodeService(retrofit: Retrofit): AreaCodeService {
+        return retrofit.create(AreaCodeService::class.java)
     }
 } 
