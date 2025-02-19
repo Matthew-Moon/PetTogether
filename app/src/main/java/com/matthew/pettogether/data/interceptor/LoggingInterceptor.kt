@@ -1,4 +1,4 @@
-package com.matthew.pettogether.data.Interceptor
+package com.matthew.pettogether.data.interceptor
 
 import android.util.Log
 import okhttp3.Interceptor

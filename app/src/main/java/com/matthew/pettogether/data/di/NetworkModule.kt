@@ -1,8 +1,8 @@
 package com.matthew.pettogether.data.di
 
 import com.google.gson.GsonBuilder
-import com.matthew.pettogether.data.Interceptor.CommonQueryInterceptor
-import com.matthew.pettogether.data.Interceptor.LoggingInterceptor
+import com.matthew.pettogether.data.interceptor.CommonQueryInterceptor
+import com.matthew.pettogether.data.interceptor.LoggingInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
