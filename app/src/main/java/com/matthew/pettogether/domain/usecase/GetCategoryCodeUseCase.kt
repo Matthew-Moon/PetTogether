@@ -1,6 +1,6 @@
 package com.matthew.pettogether.domain.usecase
 
-import com.matthew.pettogether.data.dto.response.CategoryCodeResponse
+import com.matthew.pettogether.domain.model.Category
 import com.matthew.pettogether.domain.repository.CategoryCodeRepository
 import dagger.Reusable
 import javax.inject.Inject
@@ -9,7 +9,7 @@ import javax.inject.Inject
 class GetCategoryCodeUseCase @Inject constructor(
     private val categoryCodeRepository: CategoryCodeRepository
 ) {
-    suspend operator fun invoke(): CategoryCodeResponse {
+    suspend operator fun invoke(): List<Category> {
         return categoryCodeRepository.getCategoryCode()
     }
 }

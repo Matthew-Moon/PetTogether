@@ -71,6 +71,14 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
 
+    // Material Icons
+    implementation(libs.androidx.material.icons)
+
+    // Compose ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    // Accompanist System UI Controller
+    implementation(libs.accompanist.systemuicontroller)
 }
 
 // Allow references to generated code
