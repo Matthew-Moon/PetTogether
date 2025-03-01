@@ -79,6 +79,15 @@ dependencies {
 
     // Accompanist System UI Controller
     implementation(libs.accompanist.systemuicontroller)
+
+    // Test
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    testImplementation("io.mockk:mockk:1.13.8")
+
+    // Location
+    implementation("com.google.android.gms:play-services-location:21.1.0")
 }
 
 // Allow references to generated code

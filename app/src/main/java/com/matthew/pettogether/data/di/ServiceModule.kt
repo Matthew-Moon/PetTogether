@@ -2,6 +2,7 @@ package com.matthew.pettogether.data.di
 
 import com.matthew.pettogether.data.service.AreaCodeService
 import com.matthew.pettogether.data.service.CategoryCodeService
+import com.matthew.pettogether.data.service.LocationBasedService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -22,5 +23,11 @@ object ServiceModule {
     @Singleton
     fun provideAreaCodeService(retrofit: Retrofit): AreaCodeService {
         return retrofit.create(AreaCodeService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideLocationBasedService(retrofit: Retrofit): LocationBasedService {
+        return retrofit.create(LocationBasedService::class.java)
     }
 } 

@@ -2,8 +2,10 @@ package com.matthew.pettogether.data.di
 
 import com.matthew.pettogether.data.repository.AreaCodeRepositoryImpl
 import com.matthew.pettogether.data.repository.CategoryCodeRepositoryImpl
+import com.matthew.pettogether.data.repository.LocationRepositoryImpl
 import com.matthew.pettogether.domain.repository.AreaCodeRepository
 import com.matthew.pettogether.domain.repository.CategoryCodeRepository
+import com.matthew.pettogether.domain.repository.LocationRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -24,4 +26,10 @@ abstract class RepositoryModule {
     abstract fun bindAreaCodeRepository(
         areaCodeRepositoryImpl: AreaCodeRepositoryImpl
     ): AreaCodeRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindLocationRepository(
+        locationRepositoryImpl: LocationRepositoryImpl
+    ): LocationRepository
 } 
